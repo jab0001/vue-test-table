@@ -24,7 +24,7 @@ import { GETTERS } from "../store/modules/table/types";
 
 @Component()
 export default class ClientInfo extends Vue {
-  @Prop({ type: String, default: "" }) clientId;
+  @Prop({ type: String, default: "" }) clientId; // clientId
 
   get tableData() {
     return this.$store.getters[GETTERS.GET_TABLE_DATA];
